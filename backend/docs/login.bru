@@ -1,0 +1,23 @@
+meta {
+  name: login
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/auth/login
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  name: Kamil
+  username: kamil_
+  email: kamil@gmail.com
+  password: kamil123
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

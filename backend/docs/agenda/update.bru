@@ -1,0 +1,32 @@
+meta {
+  name: update
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/api/agendas/1
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:json {
+  {
+      "id_user":"2",
+      "id_schedule":"3",
+      "date":"2025-03-01",
+      "note":"Pemrograman Dasar"
+   }
+}
+
+body:form-urlencoded {
+  id_user: 2
+  id_schedule: 3
+  date: 2025-03-01
+  note: Belajar pemrograman
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

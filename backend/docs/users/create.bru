@@ -1,0 +1,25 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/users/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  nip: 1001
+  name: admin
+  username: admin
+  email: admin@school.com
+  password: admin
+  avatar: 
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

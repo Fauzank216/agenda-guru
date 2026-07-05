@@ -1,0 +1,22 @@
+meta {
+  name: teacher's report
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/api/report/recap?date=month
+  body: none
+  auth: inherit
+}
+
+params:query {
+  date: month
+  ~id_class: 1
+  ~id_user: 4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

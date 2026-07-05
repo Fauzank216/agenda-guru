@@ -1,0 +1,35 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/class_members/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  [
+    {
+      "id_class": "1",
+      "id_student": "8"
+    },
+    {
+      "id_class": "1",
+      "id_student": "6"
+    }
+  ]
+}
+
+body:form-urlencoded {
+  id_class: 2
+  id_student: 8
+  id_semester: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

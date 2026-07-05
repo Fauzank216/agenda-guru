@@ -1,0 +1,30 @@
+meta {
+  name: update-profile
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://localhost:3000/api/users/profile/8
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  nip: 1001
+  name: Fauzan Muammar Kamil
+  username: zanfauzan
+  email: fauzan@gmail.com
+}
+
+body:multipart-form {
+  nip: 10002
+  name: Fauzan Muammar Kamil
+  username: zanfauzan
+  email: fauzan@gmail.com
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

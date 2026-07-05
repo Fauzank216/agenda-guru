@@ -1,0 +1,51 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/agendas/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+   "agendas":{
+      "id_user":"2",
+      "id_schedule":"3",
+      "date":"2025-03-01",
+      "note":"Belajar asyik"
+   },
+    "details":[
+       { 
+         "id_class_member":"1",
+         "status_attendance":"hadir",
+         "note":"-"
+       },
+      { 
+         "id_class_member":"2",
+         "status_attendance":"sakit",
+         "note":"sakit gigi"
+       },
+      { 
+         "id_class_member":"",
+         "status_attendance":"sakit",
+         "note":"sakit gigi"
+       }
+      ]
+  }
+}
+
+body:form-urlencoded {
+  id_user: 2
+  id_schedules: 3
+  date: 2025-03-10
+  note: Belajar Logaritma
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

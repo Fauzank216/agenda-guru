@@ -1,0 +1,21 @@
+meta {
+  name: student report
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/api/report/student//range?date_start=2026-05-01&date_end=2026-05-05
+  body: none
+  auth: inherit
+}
+
+params:query {
+  date_start: 2026-05-01
+  date_end: 2026-05-05
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

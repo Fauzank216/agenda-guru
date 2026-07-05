@@ -1,0 +1,22 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http://localhost:3000/api/semesters/3
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  semester_name: 2026/2027
+  term: genap
+  status: active
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

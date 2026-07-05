@@ -1,0 +1,22 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/semesters/
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  semester_name: 2026/2027
+  term: ganjil
+  status: active
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

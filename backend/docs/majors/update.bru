@@ -1,0 +1,21 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/api/majors/4
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  major_code: TPTU
+  major_name: Teknik Pendingin Udara
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

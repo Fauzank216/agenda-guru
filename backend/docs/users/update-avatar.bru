@@ -1,0 +1,20 @@
+meta {
+  name: update-avatar
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:3000/api/users/avatar/3
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  avatar: @file(C:\Users\ASUS\OneDrive\Pictures\Screenshot_20240727_035151_Gallery.jpg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

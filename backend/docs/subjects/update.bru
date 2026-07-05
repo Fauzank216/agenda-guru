@@ -1,0 +1,20 @@
+meta {
+  name: update
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://localhost:3000/api/subjects/4
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  subject_name: Bahasa Indonesia
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

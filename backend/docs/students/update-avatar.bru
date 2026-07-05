@@ -1,0 +1,27 @@
+meta {
+  name: update-avatar
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://localhost:3000/api/students/avatar/19
+  body: multipartForm
+  auth: inherit
+}
+
+body:form-urlencoded {
+  nisn: 10001
+  name: Irfan
+}
+
+body:multipart-form {
+  nis: 1001
+  name: Irfan
+  avatar: @file(C:\Users\ASUS\OneDrive\Pictures\sepatu2.jpg)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

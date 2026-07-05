@@ -1,0 +1,21 @@
+meta {
+  name: class report
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3000/api/report/class/1/range?date_start=2026-04-01&date_end=2026-04-31
+  body: none
+  auth: inherit
+}
+
+params:query {
+  date_start: 2026-04-01
+  date_end: 2026-04-31
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
