@@ -25,9 +25,12 @@ Melalui project ini, berikut adalah beberapa target yang ingin saya capai :
 4. Melatih pemahaman query sql: Menggunakan raw query dengan tujuan melatih pemahaman sintaks sql
    
 ✨ Feature Aplikasi
+
+```
  - CRUD data Master : Guru, Siswa, Kelas, Jurusan, Mata pelajaran, Periode akademik
  - Membuat jadwal mengajar
  - Mengisi agenda sesuai jadwal mengajar
+```
 
 🛠️ Tech Stack
 
