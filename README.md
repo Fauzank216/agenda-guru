@@ -1,4 +1,4 @@
-Aplikasi Agenda Mengajar Guru
+# Aplikasi Agenda Mengajar Guru
 
 Tentang Project ini
 Aplikasi Agenda Mengajar Guru adalah platform berbasis web yang dirancang untuk mendigitalisasi pencatatan jurnal mengajar harian guru. 
